@@ -1,0 +1,5 @@
+Model,Accuracy,Precision,Recall,F1,ROC_AUC
+Decision Tree (baseline),0.846,0.432,0.432,0.432,0.672
+Decision Tree (tuned),0.754,0.333,0.811,0.472,0.85
+Random Forest (baseline),0.864,0.5,0.486,0.493,0.876
+Random Forest (tuned),0.864,0.5,0.622,0.554,0.882

@@ -1,0 +1,69 @@
+Shape: (1599, 12) | Missing: 0 | Duplicates: 240
+
+Class balance:
+ good
+0    0.865
+1    0.135
+Name: proportion, dtype: float64
+
+=== Decision Tree (baseline) ===
+               precision    recall  f1-score   support
+
+    Not good       0.91      0.91      0.91       235
+        Good       0.43      0.43      0.43        37
+
+    accuracy                           0.85       272
+   macro avg       0.67      0.67      0.67       272
+weighted avg       0.85      0.85      0.85       272
+
+Best DT params: {'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 1}
+
+=== Decision Tree (tuned) ===
+               precision    recall  f1-score   support
+
+    Not good       0.96      0.74      0.84       235
+        Good       0.33      0.81      0.47        37
+
+    accuracy                           0.75       272
+   macro avg       0.65      0.78      0.66       272
+weighted avg       0.88      0.75      0.79       272
+
+
+=== Random Forest (baseline) ===
+               precision    recall  f1-score   support
+
+    Not good       0.92      0.92      0.92       235
+        Good       0.50      0.49      0.49        37
+
+    accuracy                           0.86       272
+   macro avg       0.71      0.70      0.71       272
+weighted avg       0.86      0.86      0.86       272
+
+Best RF params: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 200}
+
+=== Random Forest (tuned) ===
+               precision    recall  f1-score   support
+
+    Not good       0.94      0.90      0.92       235
+        Good       0.50      0.62      0.55        37
+
+    accuracy                           0.86       272
+   macro avg       0.72      0.76      0.74       272
+weighted avg       0.88      0.86      0.87       272
+
+
+                    Model  Accuracy  Precision  Recall    F1  ROC_AUC
+Decision Tree (baseline)     0.846      0.432   0.432 0.432    0.672
+   Decision Tree (tuned)     0.754      0.333   0.811 0.472    0.850
+Random Forest (baseline)     0.864      0.500   0.486 0.493    0.876
+   Random Forest (tuned)     0.864      0.500   0.622 0.554    0.882
+
+5-fold CV F1 -> DT: 0.444 | RF: 0.563
+
+Top features:
+ alcohol                 0.247
+sulphates               0.148
+citric acid             0.106
+volatile acidity        0.099
+total sulfur dioxide    0.073
+dtype: float64

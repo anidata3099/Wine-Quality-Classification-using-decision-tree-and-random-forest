@@ -1,0 +1,62 @@
+{
+  "n_train": 1087,
+  "n_test": 272,
+  "n_after_dedup": 1359,
+  "pos_rate": 0.13539367181751288,
+  "confusion": {
+    "Decision Tree": [
+      [
+        175,
+        60
+      ],
+      [
+        7,
+        30
+      ]
+    ],
+    "Random Forest": [
+      [
+        212,
+        23
+      ],
+      [
+        14,
+        23
+      ]
+    ]
+  },
+  "dt_params": {
+    "criterion": "gini",
+    "max_depth": 3,
+    "min_samples_leaf": 1
+  },
+  "rf_params": {
+    "max_depth": 10,
+    "max_features": "sqrt",
+    "min_samples_leaf": 2,
+    "n_estimators": 200
+  },
+  "cv_dt": 0.44422132774592926,
+  "cv_rf": 0.5632445186743924,
+  "importance": {
+    "alcohol": 0.2469,
+    "sulphates": 0.1482,
+    "citric acid": 0.1056,
+    "volatile acidity": 0.0988,
+    "total sulfur dioxide": 0.0729,
+    "fixed acidity": 0.0715,
+    "density": 0.0676,
+    "chlorides": 0.059,
+    "pH": 0.0489,
+    "free sulfur dioxide": 0.0483,
+    "residual sugar": 0.0322
+  },
+  "quality_counts": {
+    "3": 10,
+    "4": 53,
+    "5": 577,
+    "6": 535,
+    "7": 167,
+    "8": 17
+  }
+}
