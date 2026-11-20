@@ -39,7 +39,7 @@ Best params – DT: `max_depth=3, criterion=gini` · RF: `n_estimators=200, max_
 - Top features: alcohol (0.247), sulphates (0.148), citric acid (0.106), volatile acidity (0.099), total sulfur dioxide (0.073).
 
 ## Report
-Full write-up (abstract, methods, results, limitations, references): [`report/Wine_Quality_Classification_Report.pdf`](report/Wine_Quality_Classification_Report.pdf). Executed notebook: [`wine_quality_classification.ipynb`](wine_quality_classification.ipynb).
+Full write-up (abstract, methods, results, limitations, references): [`report/Wine_Quality_Classification_Report.pdf`](https://github.com/anidata3099/Wine-Quality-Classification-using-decision-tree-and-random-forest/blob/main/Wine_Quality_Classification_Report.pdf). Executed notebook: [`wine_quality_classification.ipynb`](wine_quality_classification.ipynb).
 
 ## Visuals
 | | |
